@@ -1,13 +1,14 @@
 .header__class{
-    width: 600px;
-    height: 200px;
-    /* display: block;
-    position: relative; */
-    /* overflow:hidden; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: auto;
+    height: 320px;
+    border: 2px solid rgb(157, 255, 0);
 }
 .backgraund__image{
-    width: 200px;
-    height: 300px;
     object-fit:fill;
     outline: 4px auto #145B97;
+    background-image: image('../../bgprincipal.png');
+
 }
