@@ -1,6 +1,10 @@
 // import { useState } from 'react'
 import './App.css'
+import Contact from './components/Contact/contact'
+import Footer from './components/Footer/footer'
 import Header from './components/Header/header'
+import PillBadges from './components/PillBadages/pillBadges'
+import WorkItem from './components/WorkItems/workItem'
 
 function App() {
 
@@ -9,9 +13,16 @@ function App() {
       <div className='container-fluid'>
         <Header></Header>
         <div className='container'>
-
-          <section className='principalDescription'>
-            descripcion principal
+          <section className='principal-description'>
+            <h3>Informacion personal</h3>
+            <Contact></Contact>
+            <Contact></Contact>
+            <h3>Formacion profesional</h3>
+            <div>
+              <span>Universidad Autonoma Indigena de Mexico</span>
+              <br />
+              <span>Ingeniero en Sistemas Computacionales</span>
+            </div>
           </section>
 
           <section className='mainTimeline'>
@@ -20,28 +31,22 @@ function App() {
           
             <section className='topWorks'>
               <h3>Experiencia laboral</h3>
-              <div className="workDetail">
-                <h3>mi primera chamba</h3>
-                <span>nombre</span>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque laborum tenetur deleniti similique unde in suscipit? Veritatis, ab sit non in, minima tenetur voluptatum repudiandae quaerat eveniet aut illum aliquam.</p>
-              </div>
+              <WorkItem></WorkItem>
             </section>
           </section>
           <section className="tools">
-            <h3>skills</h3>
-            <li>python</li>
-            <li></li>
-            <li></li>
+            <h3>Habilidades</h3>
+            <div className='tool-items'>
+
+            <PillBadges></PillBadges>
+            <PillBadges></PillBadges>
+            <PillBadges></PillBadges>
+            <PillBadges></PillBadges>
+            </div>
           </section>
-          <footer>
-            2024
-          </footer>
         </div>
-
-       
-        
       </div>
-
+          <Footer></Footer>
     </main>
     </>
   )

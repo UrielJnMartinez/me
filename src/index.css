@@ -19,7 +19,7 @@ body{
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  border: 2px solid rgb(255, 140, 0);
+  /* border: 2px solid rgb(255, 140, 0); */
 }
 
 h1 {

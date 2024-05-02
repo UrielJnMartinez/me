@@ -1,14 +1,41 @@
-.header__class{
+.header-class{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     width: auto;
     height: 320px;
-    border: 2px solid rgb(157, 255, 0);
+    
 }
-.backgraund__image{
-    object-fit:fill;
-    outline: 4px auto #145B97;
+.backgraund-image{
+   
     background-image: image('../../bgprincipal.png');
+    /* border: 2px solid #fff; */
 
+
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    /* gap: 15; */
+    width: auto;
+}
+.profile-image{
+    /* border: 2px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 1rem; */
+}
+.profile-image img {
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+    border: 4px solid #fff;
+    
+}
+.biography {
+    align-content: flex-end;
+    padding-bottom: 2rem;
+    /* border: 2px solid #b33737; */
 }
