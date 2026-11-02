@@ -1,12 +1,15 @@
 
 import './pillBadges.css'
 
-const PillBadges = () => {
+type PillBadgesProps = {
+    label: string
+}
+
+const PillBadges = ({ label }: PillBadgesProps) => {
     return (
-        <div className="pill-item">
-            {/* <img src="" alt="" /> */}
-            <span className='pill-description'>pytsdfhonsdf</span>
-        </div>
+        <li className="pill-item">
+            <span className='pill-description'>{label}</span>
+        </li>
     )
 }
 

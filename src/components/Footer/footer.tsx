@@ -3,11 +3,10 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <div>
-            <footer>
-            2024 &copy; 
-          </footer>
-        </div>
+        <footer className="site-footer">
+            <span>© {new Date().getFullYear()} Uriel Martínez</span>
+            <span>Hecho en México</span>
+        </footer>
     )
 }
 

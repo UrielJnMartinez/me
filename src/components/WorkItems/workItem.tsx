@@ -1,18 +1,24 @@
 import './workItem.css'
 
-const WorkItem = () => {
+type WorkItemProps = {
+    role: string
+    company: string
+    period: string
+    location: string
+    summary: string
+}
+
+const WorkItem = ({ role, company, period, location, summary }: WorkItemProps) => {
     return (
-        <div>
-            <div className="work-item">
-                <h3 className='title-job'>Software Developer</h3>
-                <div className="work-info">
-                    <img src="" alt="" />
-                    <span className='work-name'>Coppel | </span>
-                    <span className='timelapse'>2023 - Actual</span>
-                </div>
-                <p className='work-details'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque laborum tenetur deleniti similique unde in suscipit? Veritatis, ab sit non in, minima tenetur voluptatum repudiandae quaerat eveniet aut illum aliquam.</p>
-              </div>
-        </div>
+        <article className="work-item">
+            <h3 className="title-job">{role}</h3>
+            <p className="work-info">
+                <span className="work-name">{company}</span>
+                <span className="timelapse">{period}</span>
+                <span>{location}</span>
+            </p>
+            <p className="work-details">{summary}</p>
+        </article>
     )
 }
 

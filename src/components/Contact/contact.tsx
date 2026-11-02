@@ -1,16 +1,16 @@
 
 import './contact.css'
 
-const Contact = () => {
+type ContactProps = {
+    href: string
+    label: string
+}
+
+const Contact = ({ href, label }: ContactProps) => {
     return (
-        <div>
-            <div className="contact">                               
-                <a href="">
-                    <img src="" alt="" /> 
-                    <span>correo</span>
-                </a>
-            </div>
-        </div>
+        <li className="contact">
+            <a href={href}>{label}</a>
+        </li>
     )
 }
 export default Contact;
