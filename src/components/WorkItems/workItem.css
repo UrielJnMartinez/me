@@ -1,0 +1,50 @@
+.work-item {
+	position: relative;
+	padding: 0.1rem 0 2rem 1.5rem;
+	border-bottom: 1px solid var(--color-border);
+}
+
+.work-item:last-child {
+	padding-bottom: 0.1rem;
+	border-bottom: 0;
+}
+
+.work-item::before {
+	position: absolute;
+	top: 0.45rem;
+	left: -5px;
+	width: 9px;
+	height: 9px;
+	border: 2px solid var(--color-surface);
+	border-radius: 50%;
+	background: var(--color-secondary);
+	content: '';
+}
+
+.title-job {
+	margin: 0 0 0.45rem;
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.work-info {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem 0.65rem;
+	margin: 0 0 0.75rem;
+	color: var(--color-muted);
+	font-size: 0.83rem;
+}
+
+.work-name {
+	color: var(--color-primary);
+	font-weight: 700;
+}
+
+.work-details {
+	max-width: 65ch;
+	margin: 0;
+	color: var(--color-body);
+	font-size: 0.94rem;
+	line-height: 1.7;
+}

@@ -1,0 +1,20 @@
+
+.contact {
+    overflow-wrap: anywhere;
+    color: var(--color-body);
+    font-size: 0.9rem;
+}
+
+.contact + .contact {
+    margin-top: 0.7rem;
+}
+
+.contact a {
+    text-decoration-color: var(--color-highlight);
+    text-underline-offset: 0.2em;
+}
+
+.contact a:hover {
+    color: var(--color-secondary);
+    text-decoration-color: currentColor;
+}
